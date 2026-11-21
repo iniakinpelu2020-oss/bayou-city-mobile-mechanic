@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bayou City Mobile Mechanic — Houston, TX</title>
+<meta name="description" content="Mobile mechanic serving Houston. Oil changes, brakes, batteries, diagnostics and pre-purchase inspections at your driveway or office lot. Call (713) 824-5093.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="boot" id="boot" aria-hidden="true">
+  <div class="boot-scan"></div>
+  <div class="boot-word"><span>BAYOU</span><span>CITY</span></div>
+  <div class="boot-line"></div>
+</div>
+
+<div class="rail" aria-hidden="true"><span>HOUSTON, TX</span><span>MOBILE MECHANIC</span><span>(713) 824-5093</span></div>
+
+<header class="bar">
+  <a class="mark" href="#top">
+    <span class="mark-txt">BAYOU CITY</span>
+    <span class="mark-sub">MOBILE MECHANIC</span>
+  </a>
+  <nav class="bar-nav">
+    <a href="#services">Services</a>
+    <a href="#estimate">Estimate</a>
+    <a href="#prices">Pricing</a>
+    <a href="#hours">Hours</a>
+  </nav>
+  <div class="bar-act">
+    <a class="tel" href="tel:+17138245093">(713) 824-5093</a>
+    <button class="btn btn-ink" data-open>Book a slot</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="dot"></span> 4.9 ★ from 91 Houston drivers</p>
+      <h1>
+        The shop<br>
+        <em>comes to</em><br>
+        your car.
+      </h1>
+      <p class="lede">Certified mobile mechanic covering Houston inside the Beltway. Oil, brakes, batteries, diagnostics — done in your driveway, your office garage, or the lot at your apartment.</p>
+      <div class="hero-cta">
+        <button class="btn btn-ink btn-lg" data-open>Get a live estimate</button>
+        <a class="btn btn-ghost btn-lg" href="sms:+17138245093?&amp;body=Hi%20Bayou%20City%20Mobile%20Mechanic%2C%20I%20need%20work%20on%20my%20car%20in%20Houston.">Text the van</a>
+      </div>
+      <ul class="hero-facts">
+        <li><b>Same-day</b> slots most weekdays</li>
+        <li><b>No tow</b> — we bring the tools</li>
+        <li><b>1&nbsp;yr</b> warranty on parts &amp; labour</li>
+      </ul>
+    </div>
+
+    <div class="hero-stage">
+      <div class="dial" id="dial">
+        <div class="dial-ring"></div>
+        <div class="dial-ring dial-ring-2"></div>
+        <div class="dial-face">
+          <span class="dial-k">TODAY</span>
+          <strong class="dial-v" id="dialSlot">2 slots</strong>
+          <span class="dial-l">open in Houston</span>
+        </div>
+        <div class="dial-needle" id="needle"></div>
+        <span class="dial-tick t1"></span><span class="dial-tick t2"></span>
+        <span class="dial-tick t3"></span><span class="dial-tick t4"></span>
+      </div>
+      <div class="badge-card">
+        <span class="badge-k">SERVICE RADIUS</span>
+        <span class="badge-v">Inside Beltway 8</span>
+        <span class="badge-n">Downtown · Heights · Montrose · Galleria · Katy</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip">
+    <div class="strip-track">
+      <span>OIL &amp; FILTER</span><i>◆</i><span>BRAKES</span><i>◆</i><span>BATTERY</span><i>◆</i><span>DIAGNOSTICS</span><i>◆</i><span>PRE-PURCHASE INSPECTION</span><i>◆</i><span>STARTER &amp; ALTERNATOR</span><i>◆</i>
+      <span>OIL &amp; FILTER</span><i>◆</i><span>BRAKES</span><i>◆</i><span>BATTERY</span><i>◆</i><span>DIAGNOSTICS</span><i>◆</i><span>PRE-PURCHASE INSPECTION</span><i>◆</i><span>STARTER &amp; ALTERNATOR</span><i>◆</i>
+    </div>
+  </section>
+
+  <section class="sec" id="services">
+    <div class="sec-head">
+      <p class="sec-num">01 / SERVICES</p>
+      <h2>Six jobs, one van.<br><em>Spin the drum.</em></h2>
+    </div>
+
+    <div class="filters" id="filters" role="tablist" aria-label="Filter services">
+      <button class="pill is-on" data-filter="all">All</button>
+      <button class="pill" data-filter="service">Service</button>
+      <button class="pill" data-filter="repair">Repair</button>
+      <button class="pill" data-filter="inspect">Inspect</button>
+    </div>
+
+    <div class="stage-wrap">
+      <div class="stage" id="stage">
+        <div class="drum" id="drum"></div>
+      </div>
+      <div class="stage-nav">
+        <button class="arrow" id="prev" aria-label="Previous service">←</button>
+        <span class="stage-count"><b id="cardIdx">01</b> / <span id="cardTot">06</span></span>
+        <button class="arrow" id="next" aria-label="Next service">→</button>
+      </div>
+    </div>
+
+    <div class="card-detail" id="cardDetail">
+      <p class="cd-tag" id="cdTag">SERVICE</p>
+      <h3 id="cdTitle">Mobile Oil &amp; Filter Change</h3>
+      <p id="cdDesc">Full synthetic oil, new filter, 20-point walkaround, top-off of all fluids.</p>
+      <p class="cd-price" id="cdPrice">from $89</p>
+    </div>
+  </section>
+
+  <section class="sec sec-alt" id="estimate">
+    <div class="sec-head">
+      <p class="sec-num">02 / LIVE ESTIMATE</p>
+      <h2>Build the job.<br><em>Watch the number.</em></h2>
+    </div>
+
+    <div class="cfg">
+      <div class="cfg-groups">
+        <div class="grp">
+          <p class="grp-k">Vehicle</p>
+          <div class="pills" data-group="vehicle">
+            <button class="pill is-on" data-add="0">Sedan / coupe</button>
+            <button class="pill" data-add="25">SUV / minivan</button>
+            <button class="pill" data-add="45">Truck / large SUV</button>
+          </div>
+        </div>
+        <div class="grp">
+          <p class="grp-k">Job</p>
+          <div class="pills" data-group="job">
+            <button class="pill is-on" data-base="89" data-label="Oil &amp; filter change">Oil &amp; filter</button>
+            <button class="pill" data-base="189" data-label="Brake pads &amp; rotors">Brakes</button>
+            <button class="pill" data-base="129" data-label="Battery replacement">Battery</button>
+            <button class="pill" data-base="79" data-label="Diagnostic scan">Diagnostics</button>
+          </div>
+        </div>
+        <div class="grp">
+          <p class="grp-k">Timing</p>
+          <div class="pills" data-group="timing">
+            <button class="pill is-on" data-add="0">Scheduled</button>
+            <button class="pill" data-add="35">Same-day</button>
+            <button class="pill" data-add="55">After hours</button>
+          </div>
+        </div>
+      </div>
+
+      <aside class="cfg-out">
+        <p class="out-k">YOUR ESTIMATE</p>
+        <p class="out-v">$<span id="cfgTotal">89</span></p>
+        <p class="out-job" id="cfgJob">Oil &amp; filter change</p>
+        <div class="out-gauge"><div class="out-fill" id="gaugeFill"></div></div>
+        <ul class="out-lines" id="outLines"></ul>
+        <button class="btn btn-ink btn-lg btn-wide" data-open>Lock this estimate</button>
+        <p class="out-note">Starting rates, confirmed on the phone before we roll.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="sec" id="prices">
+    <div class="sec-head">
+      <p class="sec-num">03 / PRICE LIST</p>
+      <h2>Printed prices.<br><em>No mystery line items.</em></h2>
+    </div>
+    <table class="price">
+      <thead><tr><th>Job</th><th>What's included</th><th>From</th></tr></thead>
+      <tbody>
+        <tr><td>Oil &amp; filter change</td><td>Full synthetic, filter, fluid top-off</td><td>$89</td></tr>
+        <tr><td>Battery test &amp; replacement</td><td>Load test, new battery, terminal clean</td><td>$129</td></tr>
+        <tr><td>Diagnostic scan</td><td>OBD-II scan, fault read-out, next steps</td><td>$79</td></tr>
+        <tr><td>Brake pads &amp; rotors</td><td>Front or rear axle, pads + rotors</td><td>$189</td></tr>
+        <tr><td>Pre-purchase inspection</td><td>120-point check, photo report</td><td>$149</td></tr>
+        <tr><td>Starter / alternator</td><td>Test, remove &amp; refit, parts extra</td><td>$249</td></tr>
+      </tbody>
+    </table>
+    <p class="price-note">Prices exclude parts where noted and are starting rates for sedans inside the Beltway. Truck and SUV work adds $25–$45.</p>
+  </section>
+
+  <section class="sec sec-alt">
+    <div class="sec-head"><p class="sec-num">04 / HOW IT WORKS</p><h2>Three steps.</h2></div>
+    <ol class="steps">
+      <li><span class="step-n">01</span><h3>Tell us the car</h3><p>Make, model, year and the address it's parked at. Two minutes by text or call.</p></li>
+      <li><span class="step-n">02</span><h3>Get a fixed quote</h3><p>We confirm the job and the number before the van leaves. No surprise add-ons at the curb.</p></li>
+      <li><span class="step-n">03</span><h3>Stay where you are</h3><p>We arrive with the tools and parts, do the work, and leave the bay cleaner than we found it.</p></li>
+    </ol>
+  </section>
+
+  <section class="sec" id="hours">
+    <div class="sec-head"><p class="sec-num">05 / HOURS</p><h2>When the van rolls.</h2></div>
+    <ul class="hours" id="hours">
+      <li data-day="Mon"><span>Monday</span><b>8:00am – 6:00pm</b></li>
+      <li data-day="Tue"><span>Tuesday</span><b>8:00am – 6:00pm</b></li>
+      <li data-day="Wed"><span>Wednesday</span><b>8:00am – 6:00pm</b></li>
+      <li data-day="Thu"><span>Thursday</span><b>8:00am – 6:00pm</b></li>
+      <li data-day="Fri"><span>Friday</span><b>8:00am – 6:00pm</b></li>
+      <li data-day="Sat"><span>Saturday</span><b>9:00am – 4:00pm</b></li>
+      <li data-day="Sun"><span>Sunday</span><b>Emergency call-outs only</b></li>
+    </ul>
+  </section>
+
+  <section class="sec sec-alt">
+    <div class="sec-head"><p class="sec-num">06 / SERVICE AREA</p><h2>Inside the Beltway,<br><em>plus a little beyond.</em></h2></div>
+    <ul class="area">
+      <li>Downtown</li><li>Midtown</li><li>The Heights</li><li>Montrose</li><li>River Oaks</li><li>Galleria</li>
+      <li>Museum District</li><li>EaDo</li><li>Kirby</li><li>Bellaire</li><li>Garden Oaks</li><li>Spring Branch</li>
+      <li>Katy</li><li>Sugar Land</li><li>Pasadena</li>
+    </ul>
+    <p class="area-note">Outside the Beltway? Text the address — we quote the travel before booking.</p>
+  </section>
+
+  <section class="sec" id="reviews">
+    <div class="sec-head"><p class="sec-num">07 / REVIEW HIGHLIGHTS</p><h2>What the rating says.</h2></div>
+    <div class="rev-grid">
+      <div class="rev-score">
+        <p class="rev-big">4.9</p>
+        <p class="rev-stars">★★★★★</p>
+        <p class="rev-count">91 reviews on Google</p>
+      </div>
+      <ul class="rev-themes">
+        <li><b>Shows up on time</b><span>Booking window held, text updates on the way.</span></li>
+        <li><b>Fair, quoted up front</b><span>Number agreed before the work starts.</span></li>
+        <li><b>Works where you park</b><span>Driveways, apartment lots, office garages.</span></li>
+        <li><b>Cleans up after</b><span>No oil on the concrete, no loose tools left behind.</span></li>
+      </ul>
+    </div>
+    <p class="rev-note">Themes summarised from the public Google rating. Individual reviews live on the Google Business profile.</p>
+  </section>
+
+  <section class="finale">
+    <h2>Car trouble in Houston?<br><em>The van is already out.</em></h2>
+    <div class="finale-cta">
+      <a class="btn btn-hi btn-lg" href="tel:+17138245093">Call (713) 824-5093</a>
+      <button class="btn btn-ghost btn-lg" data-open>Get an estimate</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-col">
+    <p class="foot-mark">BAYOU CITY</p>
+    <p class="foot-sub">Mobile Mechanic · Houston, TX</p>
+  </div>
+  <div class="foot-col">
+    <p class="foot-k">Contact</p>
+    <a href="tel:+17138245093">(713) 824-5093</a>
+    <a href="sms:+17138245093?&amp;body=Hi%20Bayou%20City%20Mobile%20Mechanic%2C%20I%20need%20work%20on%20my%20car%20in%20Houston.">Text us</a>
+  </div>
+  <div class="foot-col">
+    <p class="foot-k">Coverage</p>
+    <p>Houston inside Beltway 8,<br>plus Katy, Sugar Land &amp; Pasadena.</p>
+  </div>
+  <div class="foot-col">
+    <p class="foot-k">Hours</p>
+    <p>Mon–Fri 8–6 · Sat 9–4<br>Sun emergency call-outs</p>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Estimate request">
+  <div class="drawer-head">
+    <p class="drawer-k">ESTIMATE</p>
+    <button class="drawer-x" id="drawerClose" aria-label="Close">✕</button>
+  </div>
+  <h3 id="drawerJob">Oil &amp; filter change</h3>
+  <p class="drawer-total">$<span id="drawerTotal">89</span> <small>starting</small></p>
+  <ul class="drawer-lines" id="drawerLines"></ul>
+  <div class="drawer-body">
+    <p>Send this estimate to the van and we'll confirm the slot — usually within the hour on weekdays.</p>
+    <a class="btn btn-ink btn-lg btn-wide" id="drawerCall" href="tel:+17138245093">Call (713) 824-5093</a>
+    <a class="btn btn-ghost btn-lg btn-wide" id="drawerSms" href="sms:+17138245093?&amp;body=Hi%20Bayou%20City%20Mobile%20Mechanic.">Text this estimate</a>
+  </div>
+  <p class="drawer-foot">Houston, TX · Inside Beltway 8 · Mon–Sat</p>
+</aside>
+
+<div class="mbar">
+  <a class="mbar-btn" href="tel:+17138245093">Call</a>
+  <a class="mbar-btn" href="sms:+17138245093?&amp;body=Hi%20Bayou%20City%20Mobile%20Mechanic%2C%20I%20need%20work%20on%20my%20car%20in%20Houston.">Text</a>
+  <button class="mbar-btn mbar-dark" data-open>Estimate</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
